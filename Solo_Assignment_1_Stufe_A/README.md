@@ -1,5 +1,19 @@
-# Vue 3 + TypeScript + Vite
+# Solo_Assignment_1_Stufe_A
+Lisa Hoffmann - 1WS - NextGen_Web_Frontend
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Description
+This project is based on the vue-ts template and was redesigned for this assignement. The project consists of one component called 'Counter.vue' providing and handling the logic for this project. Artificial Intelligence (Claude) was used for clarification for some comands in this project. 
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## How to run
+```bash
+cd ./Solo_Assignment_1_Stufe_A
+npm install
+npm run dev
+```
+
+## Important Files
+| File | Description |
+|---|---|
+| Counter.vue | Implementation of counter (Display of value, decrease button, increase button and multiply display) and the corresponding logic |
+| App.vue | Import of counter component and running the app |
+| style.css | Styling of html elements for App and Counter component |
