@@ -16,23 +16,27 @@ const calculate = computed(() => count.value * 2)
 
 
 <div class ="buttons">
+    
+
+  <button type="button"  @click="count--">
+      -
+    </button>
+  
+
+    <button type="button" >
+      {{ count }}
+    </button>
+
+
     <button type="button"  @click="count++">
       +
     </button>
-
-
-    <button type="button" >
-      Count is {{ count }}
-    </button>
-
-
-    <button type="button"  @click="count--">
-      -
-    </button>
+    
   </div>
 
+  
     <div class="display">
-      Multipliziert mal 2 ist: {{ calculate }}
+      Multiplied by 2 = {{ calculate }}
     </div>
 
 
@@ -43,7 +47,7 @@ const calculate = computed(() => count.value * 2)
 
 
 
-  <section id="next-steps">
+  <section id="signing">
     <div id="docs">
       <h2>Assignment 1 A</h2>
       <p>Lisa Hoffmann, WS 1</p>
