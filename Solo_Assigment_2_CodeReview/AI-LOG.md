@@ -1,0 +1,5 @@
+Prompt: "Erkläre Thema A, B und C möglichst einfach" Übernommen: Überblick über Slots, Composables und Props/Events Geändert/verstanden: Unterschied der drei Patterns verstanden
+Prompt: "Wie funktionieren benannte Slots und der Default-Slot?" Übernommen: #header-Slot und Default-Slot in NoteCard Geändert/verstanden: warum $slots.header den Header ein-/ausblendet, BaseCard kennt keine Notizen
+Prompt: "Warum löscht der Löschen-Button die Notiz nicht selbst?" Übernommen: emit-Muster für delete Geändert/verstanden: Props sind read-only, das Child Element meldet nur, die Liste gehört App.vue
+Prompt: "Wie funktioniert v-model und was macht .prevent beim Formular?" Übernommen: v-model und @submit.prevent in NoteForm Geändert/verstanden: v-model wirkt in beide Richtungen, .prevent verhindert den Seiten-Reload
+Prompt: "Wie wird aus einem kommagetrennten Text eine Tag-Liste?" Übernommen: split/map/filter-Kette Geändert/verstanden: jeder Schritt einzeln nachvollzogen, leere Einträge werden per filter entfernt

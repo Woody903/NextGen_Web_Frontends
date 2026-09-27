@@ -1,22 +1,25 @@
 <script setup lang="ts">
-import NoteCard from './components/NoteCard.vue';
+import { ref } from 'vue'
+import NoteCard from './components/NoteCard.vue'
+import NoteForm from './components/NoteForm.vue'
+import SearchBar from './components/searchBar.vue'
+import { useNotes } from './composables/useNotes.js'
 
-import type { Note } from './types/notes';
-
-
-
-const testnote: Note = {
-  id: 1,
-  title: 'Hallo Note',
-  content: 'This is a test note.',
- tags: ['test', 'note'],
-};
+const { addNote, deleteNote, filteredNotes } = useNotes()
+const searchTerm = ref('')
+const searchResults = filteredNotes(searchTerm)
 
 </script>
 
-
 <template>
- 
-  <NoteCard :note="testnote" @delete="(id) => console.log('Delete:', id)" />
+  <SearchBar v-model="searchTerm" />
 
+  <NoteForm @add="addNote" />
+
+  <NoteCard
+    v-for="note in searchResults"
+    :key="note.id"
+    :note="note"
+    @delete="deleteNote"
+  />
 </template>
